@@ -1,0 +1,22 @@
+/* ------------------------------- CARD TRAVEL ------------------------------ */
+
+.card-travel {
+  .card-travel-detail {
+
+    .location-detail {
+      display: flex;
+      place-content: space-between;
+
+      .stars-container {
+        height: 30px;
+        display: flex;
+        img {
+          width: 27px;
+          padding: 0 4px;
+
+        }
+      }
+
+    }
+  }
+}

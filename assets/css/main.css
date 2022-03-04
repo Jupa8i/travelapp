@@ -446,11 +446,6 @@ footer .legal .legal-p {
   justify-content: space-between;
 }
 
-#sobre-nosotros .banner-green {
-  width: 300px;
-  height: 10px;
-  background-color: #8BC34A;
-}
 #sobre-nosotros .slider-sobre-nosotros {
   display: block;
   height: 349px;
@@ -461,6 +456,12 @@ footer .legal .legal-p {
   align-items: center;
   display: flex;
   place-content: center;
+}
+@media (max-width: 992px) {
+  #sobre-nosotros .slider-sobre-nosotros img {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 #sobre-nosotros .main-container {
   width: 95%;

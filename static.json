@@ -1,0 +1,7 @@
+{
+  "raíz": "dist",
+  "clean_urls": verdadero,
+  "rutas": {
+    "/**": "index.html"
+  }
+}

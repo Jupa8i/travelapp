@@ -1,7 +1,5 @@
 /* ---------------------------------- HOME ---------------------------------- */
-
 #home {
-
   .slider-container {
 
     img {
@@ -10,7 +8,7 @@
 
     @media (min-width: $md) {
       min-height: 395px;
-  }
+    }
   }
 
   .main-container {
@@ -33,7 +31,6 @@
       }
     }
 
-
   }
 
   .main {
@@ -41,13 +38,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
 
-
-
-
     @media (max-width: $md) {
       grid-template-columns: 1fr;
     }
   }
 
+}
 
+#index {
+  min-height: 100vh;
 }

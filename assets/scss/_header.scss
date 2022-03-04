@@ -16,12 +16,20 @@
     flex-flow: row wrap;
     margin: 0 auto;
 
+    #navbar-header {
+      display: flex;
+      align-self: center;
+      align-items: center;
+    }
+
     .filtros {
       display: block;
     }
 
     .logo-container {
       display: flex;
+      align-self: center;
+      align-items: center;
       height: 70px;
       .logo {
         width: 165px;

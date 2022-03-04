@@ -8,7 +8,7 @@
         </label>
         <label id="navbar-header" for="collapse_nav">
           <div class="logo-container">
-            <div v-if="options" @click="show = !show">
+            <div v-if="options" @click="show = false">
               <NuxtLink to="/"><img :src="options.header.logo_header" class="logo" /></NuxtLink>
             </div>
           </div>
@@ -16,7 +16,7 @@
 
         <div class="navbar-collapse">
           <ul v-if="options" class="mainMenu" id="mainMenu">
-            <li @click="show = !show" v-for="(item, index) in options.header.menus" :key="index">
+            <li @click="show = false" v-for="(item, index) in options.header.menus" :key="index">
               <NuxtLink :to="item.menu_url">
                 <span>{{ item.menu_label }} </span>
               </NuxtLink>

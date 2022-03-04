@@ -374,71 +374,87 @@ footer .legal .legal-p {
   color: #9e9e9e;
 }
 
-#destinos .card-travel, #destino .card-travel {
+#destinos .card-travel,
+#destino .card-travel {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
   place-content: space-between;
   margin-bottom: 40px;
 }
-#destinos .card-travel .img-container img, #destino .card-travel .img-container img {
+#destinos .card-travel .img-container img,
+#destino .card-travel .img-container img {
   width: 336px;
   display: block;
 }
 @media (max-width: 992px) {
-  #destinos .card-travel .img-container img, #destino .card-travel .img-container img {
+  #destinos .card-travel .img-container img,
+#destino .card-travel .img-container img {
     width: 100%;
   }
 }
-#destinos .card-travel li, #destino .card-travel li {
+#destinos .card-travel li,
+#destino .card-travel li {
   list-style: none;
 }
-#destinos .card-travel .hotel-detail, #destino .card-travel .hotel-detail {
+#destinos .card-travel .hotel-detail,
+#destino .card-travel .hotel-detail {
   display: flex;
   justify-content: space-between;
 }
-#destinos .card-travel .hotel-detail .hotel-detail-text, #destino .card-travel .hotel-detail .hotel-detail-text {
+#destinos .card-travel .hotel-detail .hotel-detail-text,
+#destino .card-travel .hotel-detail .hotel-detail-text {
   display: flex;
   flex-flow: column nowrap;
 }
-#destinos .card-travel .hotel-detail .hotel-detail-button img, #destino .card-travel .hotel-detail .hotel-detail-button img {
+#destinos .card-travel .hotel-detail .hotel-detail-button img,
+#destino .card-travel .hotel-detail .hotel-detail-button img {
   display: block;
 }
 @media (max-width: 768px) {
-  #destinos .card-travel .hotel-detail .hotel-detail-button img, #destino .card-travel .hotel-detail .hotel-detail-button img {
+  #destinos .card-travel .hotel-detail .hotel-detail-button img,
+#destino .card-travel .hotel-detail .hotel-detail-button img {
     margin-top: 10px;
   }
 }
-#destinos .card-travel .hotel-detail .price, #destino .card-travel .hotel-detail .price {
+#destinos .card-travel .hotel-detail .price,
+#destino .card-travel .hotel-detail .price {
   color: #707070;
   font-size: 15px;
 }
-#destinos .card-travel .hotel-detail .hotel-detail-span, #destino .card-travel .hotel-detail .hotel-detail-span {
+#destinos .card-travel .hotel-detail .hotel-detail-span,
+#destino .card-travel .hotel-detail .hotel-detail-span {
   margin-bottom: 8px;
   font-size: 15px;
   font-weight: 700;
 }
 @media (max-width: 992px) {
-  #destinos .card-travel .hotel-detail, #destino .card-travel .hotel-detail {
+  #destinos .card-travel .hotel-detail,
+#destino .card-travel .hotel-detail {
     flex-flow: row wrap;
   }
 }
 @media (max-width: 992px) {
-  #destinos .card-travel, #destino .card-travel {
+  #destinos .card-travel,
+#destino .card-travel {
     flex-flow: column nowrap;
   }
 }
-#destinos .card-travel-detail-container, #destino .card-travel-detail-container {
+#destinos .card-travel-detail-container,
+#destino .card-travel-detail-container {
   width: 100%;
 }
-#destinos .card-travel-detail-container .card-travel-detail, #destino .card-travel-detail-container .card-travel-detail {
+#destinos .card-travel-detail-container .card-travel-detail,
+#destino .card-travel-detail-container .card-travel-detail {
   padding: 10px 15px;
 }
-#destinos .card-travel-detail-container .card-travel-detail h2, #destino .card-travel-detail-container .card-travel-detail h2 {
+#destinos .card-travel-detail-container .card-travel-detail h2,
+#destino .card-travel-detail-container .card-travel-detail h2 {
   color: #f9a825;
   margin: 8px 0;
 }
-#destinos .card-travel-detail-container .card-travel-detail h1, #destino .card-travel-detail-container .card-travel-detail h1 {
+#destinos .card-travel-detail-container .card-travel-detail h1,
+#destino .card-travel-detail-container .card-travel-detail h1 {
   font-size: 32px;
   font-weight: 500;
   padding-bottom: 8px;
@@ -617,20 +633,24 @@ body {
 
 /* ------------------------------ TRANSICIONES ------------------------------ */
 /* ------------------------------ DEFAULT NUXT ------------------------------ */
-.page-enter-active, .page-leave-active {
+.page-enter-active,
+.page-leave-active {
   transition: opacity 0.5s;
 }
 
-.page-enter, .page-leave-to {
+.page-enter,
+.page-leave-to {
   opacity: 0;
 }
 
-.page2-enter-active, .page2-leave-active {
+.page2-enter-active,
+.page2-leave-active {
   transition: opacity 5.5s;
   display: block;
 }
 
-.page2-enter, .page2-leave-to {
+.page2-enter,
+.page2-leave-to {
   opacity: 0;
   display: none;
 }

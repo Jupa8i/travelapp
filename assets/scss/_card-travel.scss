@@ -1,10 +1,11 @@
 /* ------------------------------- CARD TRAVEL ------------------------------ */
-#home{
+#home {
   .card-travel {
     @include borderRadiusTop();
     overflow: hidden;
     margin-bottom: 40px;
-    .img-container{
+
+    .img-container {
       border-bottom: solid 10px $orange;
 
       img {
@@ -54,8 +55,8 @@
 }
 
 
-
-#destinos, #destino {
+#destinos,
+#destino {
   .card-travel {
     width: 100%;
     display: flex;
@@ -74,6 +75,7 @@
         }
       }
     }
+
     li {
       list-style: none;
     }
@@ -82,36 +84,36 @@
       display: flex;
       justify-content: space-between;
 
-    .hotel-detail-text {
-      display: flex;
-      flex-flow: column nowrap;
-    }
+      .hotel-detail-text {
+        display: flex;
+        flex-flow: column nowrap;
+      }
 
-    .hotel-detail-button {
+      .hotel-detail-button {
 
-      img {
-        display: block;
+        img {
+          display: block;
 
-        @media (max-width: $sm) {
-          margin-top: 10px;
+          @media (max-width: $sm) {
+            margin-top: 10px;
+          }
         }
       }
-    }
 
-    .price {
-      color: $grey-3;
-      font-size: 15px;
-    }
+      .price {
+        color: $grey-3;
+        font-size: 15px;
+      }
 
-    .hotel-detail-span {
-      margin-bottom: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    }
+      .hotel-detail-span {
+        margin-bottom: 8px;
+        font-size: 15px;
+        font-weight: 700;
+      }
 
-    @media (max-width: $md) {
-      flex-flow: row wrap;
-    }
+      @media (max-width: $md) {
+        flex-flow: row wrap;
+      }
 
 
     }
@@ -125,6 +127,7 @@
 
   .card-travel-detail-container {
     width: 100%;
+
     .card-travel-detail {
       padding: 10px 15px;
 

@@ -12,7 +12,7 @@
     display: flex;
     place-content: center;
 
-    img{
+    img {
 
       @media (max-width: $md) {
         width: 100%;
@@ -24,7 +24,7 @@
 
   .main-container {
     width: 95%;
-    height: calc(100vh - 100px) ;
+    height: calc(100vh - 100px);
     margin: auto;
 
     .main-header {
@@ -41,6 +41,7 @@
 
   .main {
     place-items: center;
+
     .p-container {
       margin-bottom: 25px;
       color: $grey-3;

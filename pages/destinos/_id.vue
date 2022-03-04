@@ -1,7 +1,6 @@
 <template>
   <div id="destino">
     <div class="slider-container slider-sobre-nosotros" v-if="travel">
-      <!-- <img :src="front_photo" alt="front_photo" /> -->
       <card-travel :travel="travel" :detail="true" />
     </div>
 
@@ -32,7 +31,6 @@
                 <span v-if="item == 'transfer'">Traslado al Hotel</span>
                 <span v-if="item == 'hotel'">Habilitiación Standar</span>
               </span>
-              <!-- <card-travel :travel="travel" /> -->
             </li>
           </template>
         </div>

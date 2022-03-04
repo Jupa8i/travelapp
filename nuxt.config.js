@@ -26,7 +26,7 @@ export default {
 
   // Plugins to run before rendering page:
   plugins: [
-    '~plugins/route',
+    // '~plugins/route',
   ],
 
   // Auto import components:

@@ -1,9 +1,5 @@
 #sobre-nosotros {
-  .banner-green {
-    width: 300px;
-    height: 10px;
-    background-color: $green-1;
-  }
+
 
   .slider-sobre-nosotros {
     display: block;
@@ -15,6 +11,14 @@
     align-items: center;
     display: flex;
     place-content: center;
+
+    img{
+
+      @media (max-width: $md) {
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
   }
 
 

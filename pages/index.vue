@@ -49,10 +49,7 @@ export default {
         .then((res) => {
           this.main_photo = res.data.main_photo;
           this.recommended = res.data.recommended;
-
-          // setTimeout(() => {
           this.load = true;
-          // }, 600);
         })
         .catch((error) => {
           console.log(error);

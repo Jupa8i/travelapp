@@ -1,0 +1,26 @@
+#destinos, #destino {
+
+
+  .main-container {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 70px;
+
+    .main-header {
+      color: $orange;
+      padding: 25px 0;
+      place-items: center;
+
+      .main-span {
+        width: 320px;
+      }
+
+    }
+  }
+
+}
+
+.destino-li {
+  width: 100%;
+  list-style: none;
+}

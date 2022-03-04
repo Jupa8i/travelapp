@@ -1,0 +1,60 @@
+#sobre-nosotros {
+  .banner-green {
+    width: 300px;
+    height: 10px;
+    background-color: $green-1;
+  }
+
+  .slider-sobre-nosotros {
+    display: block;
+    height: 349px;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    place-content: center;
+  }
+
+
+  .main-container {
+    width: 95%;
+    height: calc(100vh - 100px) ;
+    margin: auto;
+
+    .main-header {
+      color: $orange;
+      padding: 25px 0;
+      place-items: center;
+
+      .main-span {
+        width: 320px;
+      }
+
+    }
+  }
+
+  .main {
+    place-items: center;
+    .p-container {
+      margin-bottom: 25px;
+      color: $grey-3;
+
+      a {
+        color: $green-1;
+      }
+
+      p {
+        margin-bottom: 25px;
+      }
+
+      li {
+        list-style: none;
+      }
+    }
+
+
+  }
+
+}

@@ -42,7 +42,6 @@ export default {
       return this.$axios
         .get(url)
         .then((res) => {
-          console.log(res);
           this.main_photo = res.data.main_photo;
           this.recommended = res.data.recommended;
         })

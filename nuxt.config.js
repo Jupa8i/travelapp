@@ -1,7 +1,7 @@
 export default {
   // Global page headers:
   head: {
-    title: 'contadoresapp',
+    title: 'travelapp',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,11 +26,7 @@ export default {
 
   // Plugins to run before rendering page:
   plugins: [
-    '~plugins/vue-js-modal',
-    // '~plugins/vee-validate',
-    '~plugins/v-tooltip',
-    '~plugins/filters',
-    // { src: '~plugins/vue-js-toggle-button', ssr: false }
+    '~plugins/route',
   ],
 
   // Auto import components:
@@ -45,8 +41,6 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    'nuxt-fontawesome',
-    '@nuxtjs/toast'
   ],
 
   // Axios module configuration:
@@ -62,24 +56,11 @@ export default {
     }
   },
 
-  fontawesome: {
-    component: 'fa',
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faHome', 'faTimes', 'faPlus', 'faMinus', 'faTrash', 'faEraser']
-      }
-    ]
-  },
 
-  toast: {
-    position: 'top-center',
-    duration: '3000'
-  },
 
 
   // Build Configuration:
   build: {
-    transpile: ["vee-validate/dist/rules"],
+
   }
 }

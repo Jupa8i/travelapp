@@ -45,3 +45,14 @@
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
+/* ---------------------------------- HOME ---------------------------------- */
+
+@mixin borderRadiusTop {
+  -webkit-border-top-left-radius: 15px;
+-webkit-border-top-right-radius: 15px;
+-moz-border-radius-topleft: 15px;
+-moz-border-radius-topright: 15px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}

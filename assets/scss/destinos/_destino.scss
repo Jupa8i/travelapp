@@ -1,0 +1,46 @@
+/* ----------------------------- DETALLE DESTINO ---------------------------- */
+#destino {
+  .main-container {
+    display: flex;
+    min-height: calc(100vh - 525px);
+    .main-text {
+      flex: 5;
+      padding-right: 60px;
+
+      p {
+        margin-bottom: 30px;
+        color: $grey-3;
+      }
+      @media (max-width: $md) {
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    .main-icons {
+      flex: 3
+    }
+
+    .includes-li {
+      list-style: none;
+    }
+
+    .includes-icons {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px;
+
+      span {
+        padding-left: 20px;
+        font-size: 15px;
+    font-weight: 700;
+      }
+    }
+
+
+    @media (max-width: $md) {
+      display: block;
+    }
+  }
+
+}

@@ -1,11 +1,14 @@
 @import 'mixins';
 @import 'variables';
-@import 'componentes';
-@import 'contador';
 
 @import 'header';
-@import 'home';
-@import 'cardTravel';
+@import 'footer';
+@import 'home/home';
+@import 'home/card-travel';
+@import 'sobre-nosotros';
+@import 'destinos/destinos';
+@import 'destinos/destino';
+@import '404';
 
 /* --------------------------------- GENERAL -------------------------------- */
 *,
@@ -17,198 +20,23 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  // background-color: #f5f5f5;
   font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
 }
 
 .container {
   width: 100%;
-  height: calc(100vh - 100px);
+  padding-top: 80px;
   overflow-x: hidden;
 }
 
 .main {
   width: 100%;
-  // min-height: calc(100vh - 245px);
 }
 
 
-/* --------------------------------- HEADER --------------------------------- */
-
-.navbar-component {
-  min-height: 64px;
-  display: flex;
-  align-items: center;
-  background-color: $white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
-
-  .navbar {
-    width: 90%;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
-
-    .filtros {
-      display: block;
-    }
-
-    .logo-container {
-      .logo {
-        width: 30px;
-      }
-    }
-
-    .navbar-collapse {
-      width: calc(100% - 70px);
-      justify-content: space-between;
-      display: flex;
-      flex-flow: row wrap;
-
-      @include collapseAnimate;
-      overflow: hidden;
 
 
-      @media (max-width: $md) {
-        width: 100%;
-        height: 0;
-
-      }
-    }
-
-    #navbar-header {
-      @media (max-width: $md) {
-        cursor: pointer;
-        z-index: 13;
-      }
-    }
-
-    @media (max-width: $md) {
-
-      .logo-container {
-        width: 100%;
-
-        @media (min-width: $md) {
-          display: flex;
-          place-content: space-between;
-
-        }
-      }
-
-    }
-
-  }
-
-  // navbar-component
-  @media (min-width: $md) {
-    height: 70px;
-  }
-
-
-}
-
-.logo-container {
-
-  @media (max-width: $md) {
-    display: flex;
-    place-content: space-between;
-
-  }
-}
-
-.operador-filtro {
-  position: relative;
-  top: 9px;
-  margin-right: 2px;
-  font-size: 30px;
-}
-
-/* ------------------------------ COLLAPSE NAV ------------------------------ */
-
-#collapse_nav {
-  display: none;
-
-  &:checked {
-
-    ~.navbar-collapse {
-      height: 261px;
-    }
-
-    ~#navbar-header .logo-container {
-      .iconPlus {
-        @include transformRotate;
-      }
-
-      .minus {
-        @include transformRotate;
-      }
-
-    }
-  }
-}
-
-
-.iconPlus {
-  @include collapseAnimate;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-
-  .plus {
-    display: block;
-    width: 3px;
-    height: 21px;
-    margin: 0 auto;
-    background: $primary;
-  }
-
-  .minus {
-    @include collapseAnimate;
-    position: absolute;
-    display: inline-block;
-    width: 20px;
-    height: 3px;
-    top: 9px;
-    background: $primary;
-  }
-}
-
-/* --------------------------------- FOOTER --------------------------------- */
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: $primary;
-  color: $white;
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 15px;
-
-    .form-group label {
-      color: $white;
-    }
-
-    .logo-nuxt {
-      color: $white;
-    }
-
-    @media (max-width: $md) {
-
-      flex-flow: column-reverse;
-      padding-bottom: 15px;
-    }
-  }
-
-  @media (max-width: $md) {
-    position: relative;
-    margin-top: 20px;
-  }
-
-}
 
 /* ---------------------------------- MODAL --------------------------------- */
 .vm--modal {
@@ -267,6 +95,13 @@ footer {
 
 
 /* ------------------------------ TRANSICIONES ------------------------------ */
+/* ------------------------------ DEFAULT NUXT ------------------------------ */
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
 /* ---------------------------------- FADE ---------------------------------- */
 .slide-fade-enter-active {
   transition: all 0.3s ease;

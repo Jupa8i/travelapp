@@ -1,0 +1,148 @@
+/* ------------------------------- CARD TRAVEL ------------------------------ */
+#home{
+  .card-travel {
+    @include borderRadiusTop();
+    overflow: hidden;
+    margin-bottom: 40px;
+    .img-container{
+      border-bottom: solid 10px $orange;
+
+      img {
+        display: block;
+      }
+    }
+
+    .card-travel-detail {
+
+      .location-detail {
+        display: flex;
+        place-content: space-between;
+
+        .stars-container {
+          height: 30px;
+          display: flex;
+
+          span {
+            font-size: 14px;
+          }
+
+          img {
+            width: 27px;
+            padding: 0 4px;
+
+          }
+        }
+
+        h2 {
+          font-size: 15px;
+          align-self: center;
+        }
+
+      }
+
+      .hotel-detail {
+        display: flex;
+        justify-content: space-between;
+
+        .price {
+          color: $grey-4;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+#destinos, #destino {
+  .card-travel {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    place-content: space-between;
+    margin-bottom: 40px;
+
+    .img-container {
+      img {
+        width: 336px;
+        display: block;
+
+        @media (max-width: $md) {
+          width: 100%;
+
+        }
+      }
+    }
+    li {
+      list-style: none;
+    }
+
+    .hotel-detail {
+      display: flex;
+      justify-content: space-between;
+
+    .hotel-detail-text {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .hotel-detail-button {
+
+      img {
+        display: block;
+
+        @media (max-width: $sm) {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .price {
+      color: $grey-3;
+      font-size: 15px;
+    }
+
+    .hotel-detail-span {
+      margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    }
+
+    @media (max-width: $md) {
+      flex-flow: row wrap;
+    }
+
+
+    }
+
+
+    @media (max-width: $md) {
+      flex-flow: column nowrap;
+
+    }
+  }
+
+  .card-travel-detail-container {
+    width: 100%;
+    .card-travel-detail {
+      padding: 10px 15px;
+
+      h2 {
+        color: $orange;
+        margin: 8px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: 500;
+        padding-bottom: 8px;
+
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+
+}

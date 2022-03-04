@@ -1,12 +1,16 @@
 <template>
-  <div>
+  <div id="home">
     <div class="slider-container">
-      <img :src="main_photo" alt="main_photo" />
+      <transition name="page" mode="out-in">
+        <img v-show="main_photo" :src="main_photo" alt="main_photo" />
+      </transition>
     </div>
 
     <div class="main-container">
       <div class="main-header">
-        <h2>Recomendados</h2>
+        <span class="main-span">
+          <h2>Recomendados</h2>
+        </span>
       </div>
       <div class="main">
         <template v-for="(travel, index) in recommended">
@@ -28,7 +32,6 @@ export default {
     main_photo: null,
     recommended: [],
   }),
-  created() {},
   mounted() {
     this.getData();
   },

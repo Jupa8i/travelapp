@@ -1,20 +1,25 @@
 <template>
   <div class="card-travel">
-    <img :src="travel.item_photo" alt="img-trvel" />
+    <div class="img-container">
+      <img :src="travel.item_photo" alt="img-trvel" />
+    </div>
+
     <div class="card-travel-detail">
       <div class="location-detail">
         <h2>{{ travel.location }}</h2>
 
         <div class="stars-container">
           <template v-for="(star, index) in parseInt(travel.stars)">
-            <img src="@/static/img/star.svg" :key="index" />
+            <img src="img/star.svg" :key="index" />
           </template>
         </div>
       </div>
 
-      <div class="hotel-detail"></div>
+      <div class="hotel-detail">
+        <span>{{ travel.hotel_name }} </span>
 
-      <span>{{ travel.hotel_name }} </span>
+        <span class="price">{{ travel.price }} </span>
+      </div>
     </div>
   </div>
 </template>

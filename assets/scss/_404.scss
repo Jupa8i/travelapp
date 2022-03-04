@@ -1,0 +1,43 @@
+/* ----------------------------------- 404 ---------------------------------- */
+
+#error{
+  .slider-container {
+    display: flex;
+    flex-flow: column nowrap;
+
+
+    .tittle-404 {
+      color: $orange;
+      display: flex;
+      flex-flow: column;
+    }
+
+    &.slider-error {
+      display: block;
+      min-height: calc(100vh - 229px) ;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    place-content: center;
+
+    p{
+      font-weight: 700;
+      font-size: 20px;
+      padding: 0 20px;
+      padding-top: 18px;
+    }
+
+    img {
+      @media (max-width: $md){
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
+    }
+  }
+
+}
+

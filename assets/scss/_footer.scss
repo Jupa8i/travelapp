@@ -1,7 +1,5 @@
 /* --------------------------------- FOOTER --------------------------------- */
-
 footer {
-  // position: fixed;
   bottom: 0;
   width: 100%;
   background-color: $green-2;
@@ -15,20 +13,20 @@ footer {
     .rrss-list {
       display: flex;
       flex-flow: row nowrap;
+
       li {
-        list-style:none;
+        list-style: none;
         margin: 0 5px;
       }
 
     }
 
     @media (max-width: $md) {
-
-      // flex-flow: column-reverse;
       img {
         display: block;
         margin-bottom: 20px;
       }
+
       padding-bottom: 15px;
       align-items: center;
       flex-flow: column;
@@ -43,7 +41,8 @@ footer {
     text-align: center;
     font-size: 16px;
     padding: 0 20px;
-    .legal-p{
+
+    .legal-p {
       font-size: 11px;
       color: $grey-3;
       padding-bottom: 20px;

@@ -9,7 +9,6 @@ export const actions = {
     let url = '/options'
 
     return this.$axios.post(url).then(res => {
-      console.log(res)
       let options = res.data
       context.commit('setOptions', options)
       return res.data
@@ -18,7 +17,6 @@ export const actions = {
       return error.response
     })
   }
-
 
 }
 

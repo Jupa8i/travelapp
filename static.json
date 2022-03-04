@@ -1,7 +1,7 @@
 {
-  "raíz": "dist",
-  "clean_urls": verdadero,
-  "rutas": {
+  "root": "dist",
+  "clean_urls": true,
+  "routes": {
     "/**": "index.html"
   }
 }

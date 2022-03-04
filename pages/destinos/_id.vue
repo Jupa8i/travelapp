@@ -51,7 +51,6 @@ export default {
     travel: null,
   }),
   mounted() {
-    console.log(this.$route.params.id);
     this.getData();
   },
   methods: {

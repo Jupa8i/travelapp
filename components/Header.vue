@@ -6,8 +6,8 @@
         <label for="collapse_nav" id="main-menu-toggler">
           <div id="main-menu-toggler-icon"></div>
         </label>
-        <label class="d-flex w-100-resp" id="navbar-header" for="collapse_nav">
-          <div class="logo-container a-center">
+        <label id="navbar-header" for="collapse_nav">
+          <div class="logo-container">
             <div v-if="options">
               <NuxtLink to="/"><img :src="options.header.logo_header" class="logo" /></NuxtLink>
             </div>

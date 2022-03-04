@@ -40,7 +40,6 @@ export default {
       return this.$axios
         .get(url)
         .then((res) => {
-          console.log(res);
           this.background_photo = res.data.background_photo;
           this.front_photo = res.data.front_photo;
           this.about_us = res.data.about_us;

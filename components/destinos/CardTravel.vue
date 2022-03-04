@@ -45,7 +45,5 @@
 <script>
 export default {
   props: ["travel", "detail"],
-  data: () => ({}),
-  methods: {},
 };
 </script>

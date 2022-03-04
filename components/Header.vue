@@ -8,7 +8,7 @@
         </label>
         <label id="navbar-header" for="collapse_nav">
           <div class="logo-container">
-            <div v-if="options">
+            <div v-if="options" @click="show = !show">
               <NuxtLink to="/"><img :src="options.header.logo_header" class="logo" /></NuxtLink>
             </div>
           </div>

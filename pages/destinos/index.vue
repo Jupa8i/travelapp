@@ -36,7 +36,6 @@ export default {
       return this.$axios
         .get(url)
         .then((res) => {
-          console.log(res);
           this.destinos = res.data;
         })
         .catch((error) => {

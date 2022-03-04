@@ -6,7 +6,7 @@ Aplicación de viajes.
 
 ## Caracteristícas
 
-- Nuxt3
+- Nuxt3 Desplegado en Heroku
 - Vuex 
 - SASS (CSS) 
 

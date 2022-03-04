@@ -10,9 +10,9 @@ Aplicación de viajes.
 - Vuex 
 - SASS (CSS) 
 
-<!-- ## Demo
+## Demo
 
-[Demo](https://contadoresapp-rwaaqi4k7q-uc.a.run.app/) -->
+[Demo](https://travelapp-nuxt.herokuapp.com/)
 
 ## Screenshots
 
